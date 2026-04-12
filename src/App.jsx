@@ -105,7 +105,7 @@ function Loader({ onDone }) {
         </div>
         <div style={{ textAlign:"center", lineHeight:1 }}>
           <div style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:800,
-            color:"#fff", letterSpacing:"-0.02em", marginBottom:8 }}>Lizz wa Pishori</div>
+            color:"#fff", letterSpacing:"-0.02em", marginBottom:8 }}>Esther Pishori Rice</div>
           <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:9, letterSpacing:"0.38em",
             color:GOLD, textTransform:"uppercase", fontWeight:700 }}>Premium Rice · Kenya · Est. 2009</div>
         </div>
@@ -174,11 +174,11 @@ const NXT_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none
 const QT_SVG = () => <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.12"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>;
 
 // ── Constants ─────────────────────────────────────────────────────────────
-const WA_NUM = "254719828392";
-const PHONE = "+254 719 828 392";
-const FB_URL = "https://www.facebook.com/imogen.lizzie.71";
+const WA_NUM = "254703412758";
+const PHONE = "+254 703 412 758";
+const FB_URL = "https://www.facebook.com/nyambura.maina.5686";
 const IG_URL = "https://www.instagram.com/mwearicehub?igsh=bjlxOG5uZWg5OHho";
-const TT_URL = "https://vm.tiktok.com/ZS9LjjgvGnLHq-BqWLq/";
+const TT_URL = "https://vm.tiktok.com/ZS9Lkc9NR9XdF-B8lym/";
 const EMAIL = "Imogenlizah1@gmail.com";
 const NAV_ITEMS = ["Home", "About", "Products", "Gallery", "Delivery", "Contact"];
 const NAV_MAP = { Home:"home", About:"about", Products:"products", Gallery:"gallery", Delivery:"delivery", Contact:"contact" };
@@ -207,7 +207,7 @@ const TESTIMONIALS = [
   { name:"Wanjiku Muthoni", loc:"Nairobi", text:"The fragrance when cooking fills the entire house. My family now refuses any other brand!", init:"W", role:"Home Cook" },
   { name:"Chef Otieno", loc:"Mombasa", text:"We use it for pilau and biryani. Guests always compliment the rice. Deliveries always prompt.", init:"O", role:"Head Chef" },
   { name:"Grace Njeri", loc:"Kisumu", text:"Zero stones, perfectly sorted every time. The best pishori in Kenya — without question.", init:"G", role:"Restaurant Owner" },
-  { name:"James Kamau", loc:"Nakuru", text:"As a distributor, Lizz wa Pishori's supply chain is reliable and consistent. Great pricing, nationwide.", init:"J", role:"Distributor" },
+  { name:"James Kamau", loc:"Nakuru", text:"As a distributor, Esther Pishori Rice's supply chain is reliable and consistent. Great pricing, nationwide.", init:"J", role:"Distributor" },
 ];
 
 const COUNTIES = ["Nairobi","Mombasa","Kisumu","Nakuru","Eldoret","Thika","Machakos","Nyeri","Meru","Garissa","Kisii","Kakamega","Embu","Kitui","Lamu","Malindi","Nanyuki","Naivasha","All 47 Counties ✦"];
@@ -480,8 +480,8 @@ function AppContent({
 
   const openWA = useCallback((product) => {
     const msg = product
-      ? `Hello Lizz wa Pishori! I'd like to order *${product.name}* (${product.price}). Please confirm availability.`
-      : `Hello Lizz wa Pishori! I'm interested in your pishori rice. Please share more details.`;
+      ? `Hello Esther Pishori Rice! I'd like to order *${product.name}* (${product.price}). Please confirm availability.`
+      : `Hello Esther Pishori Rice! I'm interested in your pishori rice. Please share more details.`;
     window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, "_blank");
   }, []);
 
@@ -495,7 +495,7 @@ function AppContent({
 
   const submitContact = (e) => {
     e.preventDefault();
-    const msg = `Hello Lizz wa Pishori! I'm *${cform.name}* (${cform.phone}). ${cform.msg}`;
+    const msg = `Hello Esther Pishori Rice! I'm *${cform.name}* (${cform.phone}). ${cform.msg}`;
     window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, "_blank");
     setCsent(true);
     setTimeout(() => { setCsent(false); setCform({ name:"", phone:"", msg:"" }); }, 3000);
@@ -604,7 +604,7 @@ function AppContent({
         <button onClick={() => scrollTo("Home")} style={{ background:"none", border:"none", cursor:"pointer", display:"flex", alignItems:"center", gap:11 }}>
           <div style={{ width:37, height:37, background:`linear-gradient(135deg,${C.gold},${C.goldL})`, borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", boxShadow:`0 4px 14px rgba(184,115,10,0.38)`, color:"#fff" }}><WHT_SVG /></div>
           <div>
-            <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:16, color:C.txt, lineHeight:1.1 }}>Lizz wa Pishori</div>
+            <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:16, color:C.txt, lineHeight:1.1 }}>Esther Pishori Rice</div>
             <div className="dm" style={{ fontSize:7.5, color:C.gold, letterSpacing:"0.28em", textTransform:"uppercase", fontWeight:700 }}>Premium Rice · Kenya</div>
           </div>
         </button>
@@ -688,7 +688,7 @@ function AppContent({
             </Reveal>
             <Reveal delay={0.12}>
               <p className="dm" style={{ fontSize:15.5, lineHeight:1.95, color:C.mut, marginBottom:18 }}>
-                We are <strong style={{ color:C.txt }}>Lizz wa Pishori</strong>. Born among the paddies of Mwea — Kenya's heartland of pishori — we've spent over 15 years perfecting the art of sourcing and supplying the finest rice in the country.
+                We are <strong style={{ color:C.txt }}>Esther Pishori Rice</strong>. Born among the paddies of Mwea — Kenya's heartland of pishori — we've spent over 15 years perfecting the art of sourcing and supplying the finest rice in the country.
               </p>
               <p className="dm" style={{ fontSize:15.5, lineHeight:1.95, color:C.mut, marginBottom:36 }}>
                 Every sack is hand-sorted, stone-free, and packaged to preserve the natural aroma that makes pishori so special. We serve homes, restaurants, hotels, and distributors across all 47 counties.
@@ -965,7 +965,7 @@ function AppContent({
               Ready to Experience<br /><em style={{ color:C.goldL }}>Real Pishori?</em>
             </h2>
             <p className="dm" style={{ fontSize:16.5, color:"rgba(255,255,255,0.58)", maxWidth:440, margin:"0 auto 48px" }}>
-              Order today and taste why thousands of Kenyan families and restaurants choose Lizz wa Pishori every month.
+              Order today and taste why thousands of Kenyan families and restaurants choose Esther Pishori Rice every month.
             </p>
             <div className="hrow" style={{ display:"flex", gap:12, justifyContent:"center", flexWrap:"wrap" }}>
               <button onClick={() => openWA(null)} className="bwa" style={{ padding:"16px 36px", fontSize:14 }}><WA_SVG /> Order on WhatsApp</button>
@@ -981,7 +981,7 @@ function AppContent({
           <Reveal>
             <div style={{ textAlign:"center", marginBottom:66 }}>
               <div className="lbl" style={{ justifyContent:"center", marginBottom:18 }}>Get in Touch</div>
-              <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:"clamp(2rem,3.5vw,3.4rem)", fontWeight:800, color:C.txt, letterSpacing:"-0.02em" }}>Contact <em style={{ color:C.gold }}>Lizz wa Pishori</em></h2>
+              <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:"clamp(2rem,3.5vw,3.4rem)", fontWeight:800, color:C.txt, letterSpacing:"-0.02em" }}>Contact <em style={{ color:C.gold }}>Esther Pishori Rice</em></h2>
               <p className="dm" style={{ fontSize:15.5, color:C.mut, marginTop:12 }}>Fastest response via WhatsApp — or fill in the form below.</p>
             </div>
           </Reveal>
@@ -990,9 +990,9 @@ function AppContent({
               <div>
                 {[
                   [<WA_SVG />,"WhatsApp / Calls",PHONE],
-                  [<FB_SVG />,"Facebook","Lizz wa Pishori"],
+                  [<FB_SVG />,"Facebook","Esther Pishori Rice"],
                   [<IG_SVG />,"Instagram","@mwearicehub"],
-                  [<TT_SVG />,"TikTok","@MweaRiceHub"],
+                  [<TT_SVG />,"TikTok","@EstherPishoriRice"],
                   [<ML_SVG />,"Email",EMAIL],
                   [<PIN_SVG />,"Location","Mwea, Kirinyaga County"],
                   [<CLK_SVG />,"Business Hours","Mon–Sat: 7AM – 8PM"],
@@ -1046,7 +1046,7 @@ function AppContent({
               <div style={{ display:"flex", alignItems:"center", gap:11, marginBottom:16 }}>
                 <div style={{ width:38, height:38, background:`linear-gradient(135deg,${C.gold},${C.goldL})`, borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", color:"#fff" }}><WHT_SVG /></div>
                 <div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:17, color:"#fff" }}>Lizz wa Pishori</div>
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:17, color:"#fff" }}>Esther Pishori Rice</div>
                   <div className="dm" style={{ fontSize:7.5, color:C.gold, letterSpacing:"0.25em", textTransform:"uppercase" }}>Premium Rice · Kenya</div>
                 </div>
               </div>
@@ -1076,7 +1076,7 @@ function AppContent({
             </div>
             <div>
               <div className="dm" style={{ fontSize:9, letterSpacing:"0.25em", textTransform:"uppercase", color:C.gold, fontWeight:700, marginBottom:20 }}>Contact</div>
-              {[[<WA_SVG />,PHONE],[<FB_SVG />,"Lizz wa Pishori"],[<IG_SVG />,"@mwearicehub"],[<ML_SVG />,EMAIL],[<PIN_SVG />,"Mwea, Kirinyaga County"],[<CLK_SVG />,"Mon–Sat: 7AM – 8PM"]].map(([Ic,val]) => (
+              {[[<WA_SVG />,PHONE],[<FB_SVG />,"Esther Pishori Rice"],[<IG_SVG />,"@mwearicehub"],[<ML_SVG />,EMAIL],[<PIN_SVG />,"Mwea, Kirinyaga County"],[<CLK_SVG />,"Mon–Sat: 7AM – 8PM"]].map(([Ic,val]) => (
                 <div key={val} style={{ display:"flex", gap:9, marginBottom:13, alignItems:"flex-start" }}>
                   <span style={{ color:C.gold, flexShrink:0, marginTop:1 }}>{Ic}</span>
                   <span className="dm" style={{ fontSize:13, color:"rgba(255,255,255,0.28)", lineHeight:1.6 }}>{val}</span>
@@ -1086,7 +1086,7 @@ function AppContent({
             </div>
           </div>
           <div style={{ display:"flex", justifyContent:"space-between", flexWrap:"wrap", gap:8 }}>
-            <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>© {new Date().getFullYear()} Lizz wa Pishori. All rights reserved.</span>
+            <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>© {new Date().getFullYear()} Esther Pishori Rice. All rights reserved.</span>
             <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>Kenya's Finest Pishori · Countrywide Delivery</span>
           </div>
         </div>
