@@ -105,7 +105,7 @@ function Loader({ onDone }) {
         </div>
         <div style={{ textAlign:"center", lineHeight:1 }}>
           <div style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:800,
-            color:"#fff", letterSpacing:"-0.02em", marginBottom:8 }}>Mwea Rice Hub</div>
+            color:"#fff", letterSpacing:"-0.02em", marginBottom:8 }}>Lizz wa Pishori</div>
           <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:9, letterSpacing:"0.38em",
             color:GOLD, textTransform:"uppercase", fontWeight:700 }}>Premium Rice · Kenya · Est. 2009</div>
         </div>
@@ -123,14 +123,6 @@ function Loader({ onDone }) {
           color:"rgba(255,255,255,0.22)", letterSpacing:"0.08em", marginTop:-4 }}>
           Sourced from Mwea · Delivered Nationwide
         </div>
-      </div>
-      <div style={{ position:"absolute", bottom:40, left:0, right:0, display:"flex",
-        justifyContent:"center", gap:6, zIndex:2,
-        opacity:phase==="in"?0:0.4, transition:"opacity 0.8s ease 0.5s" }}>
-        {[...Array(5)].map((_, i) => (
-          <div key={i} style={{ width:i===2?28:5, height:1, background:GOLD,
-            borderRadius:1, opacity:i===2?1:0.3 }} />
-        ))}
       </div>
       <style>{`
         @keyframes riseGrain {
@@ -154,6 +146,7 @@ function Loader({ onDone }) {
 
 // ── SVGs ──────────────────────────────────────────────────────────────────
 const WA_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>;
+const IG_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>;
 const MENU_SVG = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>;
 const X_SVG = () => <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>;
 const CART_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61h9.72a2 2 0 001.99-1.61L23 6H6"/></svg>;
@@ -167,7 +160,8 @@ const GLB_SVG = () => <svg width="17" height="17" viewBox="0 0 24 24" fill="none
 const AWD_SVG = () => <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>;
 const PHN_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.46 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012.38 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>;
 const FB_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>;
-const IG_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>;
+const TT_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.77 1.52V6.74a4.85 4.85 0 01-1-.05z"/></svg>;
+const ML_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>;
 const CLK_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
 const PIN_SVG = () => <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>;
 const WHT_SVG = () => <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M11 3v18M6.5 8C5 7 3.5 5 3.5 5S5.5 3 8 4.5M17.5 8C19 7 20.5 5 20.5 5S18.5 3 16 4.5M6.5 13C5 12 3.5 10 3.5 10S5.5 8 8 9.5M17.5 13C19 12 20.5 10 20.5 10S18.5 8 16 9.5M6.5 18C5 17 3.5 15 3.5 15S5.5 13 8 14.5M17.5 18C19 17 20.5 15 20.5 15S18.5 13 16 14.5"/></svg>;
@@ -180,10 +174,12 @@ const NXT_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none
 const QT_SVG = () => <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.12"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>;
 
 // ── Constants ─────────────────────────────────────────────────────────────
-const WA_NUM = "254727311015";
-const PHONE = "+254 727 311 015";
-const FB_URL = "https://www.facebook.com/share/1H9To9emK7/";
+const WA_NUM = "254719828392";
+const PHONE = "+254 719 828 392";
+const FB_URL = "https://www.facebook.com/imogen.lizzie.71";
 const IG_URL = "https://www.instagram.com/mwearicehub?igsh=bjlxOG5uZWg5OHho";
+const TT_URL = "https://vm.tiktok.com/ZS9LjjgvGnLHq-BqWLq/";
+const EMAIL = "Imogenlizah1@gmail.com";
 const NAV_ITEMS = ["Home", "About", "Products", "Gallery", "Delivery", "Contact"];
 const NAV_MAP = { Home:"home", About:"about", Products:"products", Gallery:"gallery", Delivery:"delivery", Contact:"contact" };
 
@@ -194,10 +190,9 @@ const HERO_IMAGES = [
 ];
 
 const PRODUCTS = [
-  { name:"Pishori 2kg", price:"KSh 380", badge:"Best Seller", bc:"#b8730a", desc:"Hand-sorted long-grain pishori, stone-free with natural fragrance. Perfect for small households.", weight:"2 kg", serves:"Serves 6–8", img:"https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&q=80" },
-  { name:"Pishori 5kg", price:"KSh 890", badge:"Family Pack", bc:"#2d7a3a", desc:"Ideal for families. Consistent quality, unbeatable value. Cook enough for everyone every time.", weight:"5 kg", serves:"Serves 15–20", img:"https://images.unsplash.com/photo-1536304993881-ff86e0c9b7f7?w=600&q=80" },
-  { name:"Pishori 10kg", price:"KSh 1,650", badge:"Most Popular", bc:"#1a5fa8", desc:"For large families, caterers and small restaurants. Premium bulk pishori — every grain counts.", weight:"10 kg", serves:"Serves 30–40", img:"https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80" },
-  { name:"Wholesale 50kg", price:"KSh 7,800", badge:"Wholesale", bc:"#6b32a0", desc:"Best value for distributors, hotels and restaurants. Reliable supply, countrywide delivery.", weight:"50 kg", serves:"Restaurant Grade", img:"https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?w=600&q=80" },
+  { name:"Pishori 1kg", price:"KSh 160", badge:"Starter Pack", bc:"#b8730a", desc:"Perfect for individuals and small households. Pure Mwea pishori, naturally fragrant and stone-free.", weight:"1 kg", serves:"Serves 3–4", img:"/pishori.jpg" },
+  { name:"Dog Rice 1kg", price:"KSh 90", badge:"Budget Buy", bc:"#7a5c2e", desc:"Broken rice grains perfect for dog food, porridge and animal feeds. Affordable and available in all quantities.", weight:"1 kg", serves:"Per KG pricing", img:"/dogrice.jpg" },
+  { name:"Brown Rice 1kg", price:"KSh 170", badge:"Healthy Choice", bc:"#4a7c3f", desc:"High-fiber pishori brown rice naturally aromatic and recommended for diabetics and anyone on a healthy high-fiber diet.", weight:"1 kg", serves:"Per KG pricing", img:"/brownrice.jpg" },
 ];
 
 const GALLERY = [
@@ -212,7 +207,7 @@ const TESTIMONIALS = [
   { name:"Wanjiku Muthoni", loc:"Nairobi", text:"The fragrance when cooking fills the entire house. My family now refuses any other brand!", init:"W", role:"Home Cook" },
   { name:"Chef Otieno", loc:"Mombasa", text:"We use it for pilau and biryani. Guests always compliment the rice. Deliveries always prompt.", init:"O", role:"Head Chef" },
   { name:"Grace Njeri", loc:"Kisumu", text:"Zero stones, perfectly sorted every time. The best pishori in Kenya — without question.", init:"G", role:"Restaurant Owner" },
-  { name:"James Kamau", loc:"Nakuru", text:"As a distributor, Mwea Rice Hub's supply chain is reliable and consistent. Great pricing, nationwide.", init:"J", role:"Distributor" },
+  { name:"James Kamau", loc:"Nakuru", text:"As a distributor, Lizz wa Pishori's supply chain is reliable and consistent. Great pricing, nationwide.", init:"J", role:"Distributor" },
 ];
 
 const COUNTIES = ["Nairobi","Mombasa","Kisumu","Nakuru","Eldoret","Thika","Machakos","Nyeri","Meru","Garissa","Kisii","Kakamega","Embu","Kitui","Lamu","Malindi","Nanyuki","Naivasha","All 47 Counties ✦"];
@@ -252,6 +247,23 @@ function Reveal({ children, delay = 0, style = {} }) {
       {children}
     </div>
   );
+}
+
+// ── Animated stat counter ─────────────────────────────────────────────────
+function useCounter(target, duration = 1600, started = false) {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    if (!started) return;
+    let start = null;
+    const step = (ts) => {
+      if (!start) start = ts;
+      const p = Math.min((ts - start) / duration, 1);
+      setCount(Math.floor((1 - Math.pow(1 - p, 3)) * target));
+      if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, [started, target, duration]);
+  return count;
 }
 
 // ── HERO ──────────────────────────────────────────────────────────────────
@@ -352,8 +364,8 @@ function Hero({ onWA, onScrollTo }) {
         </div>
         <div style={{ position:"absolute", bottom:120, left:24, zIndex:10, background:"linear-gradient(135deg,#b8730a,#e9a830)", borderRadius:16, padding:"14px 20px", boxShadow:"0 14px 40px rgba(184,115,10,0.52)", textAlign:"center", animation:"hfloatR 5s ease-in-out infinite" }}>
           <div style={{ fontSize:8.5, letterSpacing:"0.2em", textTransform:"uppercase", color:"rgba(255,255,255,0.78)", fontWeight:700, fontFamily:"'DM Sans',sans-serif", marginBottom:4 }}>From only</div>
-          <div style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:800, color:"#fff", lineHeight:1 }}>KSh 380</div>
-          <div style={{ fontSize:9.5, color:"rgba(255,255,255,0.78)", marginTop:3, fontFamily:"'DM Sans',sans-serif" }}>per 2kg pack</div>
+          <div style={{ fontFamily:"'Playfair Display',serif", fontSize:22, fontWeight:800, color:"#fff", lineHeight:1 }}>KSh 160</div>
+          <div style={{ fontSize:9.5, color:"rgba(255,255,255,0.78)", marginTop:3, fontFamily:"'DM Sans',sans-serif" }}>per 1kg pack</div>
         </div>
         <div style={{ position:"absolute", right:18, top:"50%", transform:"translateY(-50%)", zIndex:10, display:"flex", flexDirection:"column", gap:8, alignItems:"center" }}>
           {HERO_IMAGES.map((_, i) => (
@@ -468,8 +480,8 @@ function AppContent({
 
   const openWA = useCallback((product) => {
     const msg = product
-      ? `Hello Mwea Rice Hub! I'd like to order *${product.name}* (${product.price}). Please confirm availability.`
-      : `Hello Mwea Rice Hub! I'm interested in your pishori rice. Please share more details.`;
+      ? `Hello Lizz wa Pishori! I'd like to order *${product.name}* (${product.price}). Please confirm availability.`
+      : `Hello Lizz wa Pishori! I'm interested in your pishori rice. Please share more details.`;
     window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, "_blank");
   }, []);
 
@@ -483,7 +495,7 @@ function AppContent({
 
   const submitContact = (e) => {
     e.preventDefault();
-    const msg = `Hello Mwea Rice Hub! I'm *${cform.name}* (${cform.phone}). ${cform.msg}`;
+    const msg = `Hello Lizz wa Pishori! I'm *${cform.name}* (${cform.phone}). ${cform.msg}`;
     window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, "_blank");
     setCsent(true);
     setTimeout(() => { setCsent(false); setCform({ name:"", phone:"", msg:"" }); }, 3000);
@@ -514,6 +526,7 @@ function AppContent({
         @keyframes shimmer{0%{background-position:-200% center}100%{background-position:200% center}}
         @keyframes stickyIn{from{transform:translateY(100%);opacity:0}to{transform:translateY(0);opacity:1}}
         @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,0.5)}70%{box-shadow:0 0 0 10px rgba(37,211,102,0)}}
+        @keyframes tagFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-6px) rotate(1deg)}}
         .bwa{background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border:none;cursor:pointer;padding:12px 24px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;border-radius:8px;display:inline-flex;align-items:center;gap:8px;transition:all 0.25s;box-shadow:0 4px 18px rgba(37,211,102,0.28);white-space:nowrap}
         .bwa:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(37,211,102,0.45)}
         .bgold{background:linear-gradient(135deg,${C.gold},#d4851a);color:#fff;border:none;cursor:pointer;padding:12px 24px;font-family:'DM Sans',sans-serif;font-weight:600;font-size:13px;border-radius:8px;display:inline-flex;align-items:center;gap:8px;transition:all 0.25s;box-shadow:0 4px 18px rgba(184,115,10,0.3);white-space:nowrap}
@@ -591,7 +604,7 @@ function AppContent({
         <button onClick={() => scrollTo("Home")} style={{ background:"none", border:"none", cursor:"pointer", display:"flex", alignItems:"center", gap:11 }}>
           <div style={{ width:37, height:37, background:`linear-gradient(135deg,${C.gold},${C.goldL})`, borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", boxShadow:`0 4px 14px rgba(184,115,10,0.38)`, color:"#fff" }}><WHT_SVG /></div>
           <div>
-            <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:16, color:C.txt, lineHeight:1.1 }}>Mwea Rice Hub</div>
+            <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:16, color:C.txt, lineHeight:1.1 }}>Lizz wa Pishori</div>
             <div className="dm" style={{ fontSize:7.5, color:C.gold, letterSpacing:"0.28em", textTransform:"uppercase", fontWeight:700 }}>Premium Rice · Kenya</div>
           </div>
         </button>
@@ -617,9 +630,10 @@ function AppContent({
             <button onClick={() => { openWA(null); setMenuOpen(false); }} className="bwa"><WA_SVG /> WhatsApp</button>
             <button onClick={() => { setOrderModal(PRODUCTS[0]); setMenuOpen(false); }} className="bgold"><CART_SVG /> Order Now</button>
           </div>
-          <div style={{ display:"flex", gap:20, marginTop:6 }}>
+          <div style={{ display:"flex", gap:14, marginTop:6 }}>
             <a href={FB_URL} target="_blank" rel="noreferrer" style={{ color:"#1877f2", width:40, height:40, background:"rgba(24,119,242,0.1)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="Facebook"><FB_SVG /></a>
-            <a href={IG_URL} target="_blank" rel="noreferrer" style={{ color:"#e1306c", width:40, height:40, background:"rgba(225,48,108,0.08)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="Instagram"><IG_SVG /></a>
+            <a href={IG_URL} target="_blank" rel="noreferrer" style={{ color:"#E1306C", width:40, height:40, background:"rgba(225,48,108,0.1)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="Instagram"><IG_SVG /></a>
+            <a href={TT_URL} target="_blank" rel="noreferrer" style={{ color:C.txt, width:40, height:40, background:"rgba(0,0,0,0.05)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="TikTok"><TT_SVG /></a>
             <a href={`tel:+${WA_NUM}`} style={{ color:C.green, width:40, height:40, background:"rgba(27,74,24,0.08)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="Call us"><PHN_SVG /></a>
           </div>
         </div>
@@ -644,11 +658,11 @@ function AppContent({
           <Reveal>
             <div className="about-imgs">
               <div className="about-main-img" style={{ position:"absolute", right:0, top:0, width:"80%", height:"76%", borderRadius:22, overflow:"hidden", boxShadow:"0 36px 90px rgba(0,0,0,0.16)" }}>
-                <img src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=700&q=85" alt="Mwea farm pishori rice fields" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
+                <img src="/ourstorypic1.jpg" alt="Mwea farm pishori rice fields" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
                 <div style={{ position:"absolute", inset:0, background:"linear-gradient(to top, rgba(20,15,7,0.25) 0%, transparent 55%)" }} />
               </div>
               <div className="about-sec-img" style={{ position:"absolute", left:0, bottom:22, width:"50%", height:"48%", borderRadius:16, overflow:"hidden", boxShadow:"0 22px 64px rgba(0,0,0,0.2)", border:"4px solid #fff" }}>
-                <img src="https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=85" alt="Kenyan pilau dish" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
+                <img src="/ourstorypic2.jpg" alt="Kenyan pilau dish" style={{ width:"100%", height:"100%", objectFit:"cover" }} />
               </div>
               <div className="about-badge-quality" style={{ position:"absolute", top:20, left:10, background:"#fff", borderRadius:14, padding:"14px 18px", boxShadow:"0 12px 40px rgba(0,0,0,0.12)", display:"flex", alignItems:"center", gap:10, animation:"bobS 4.5s ease-in-out infinite" }}>
                 <div style={{ width:40, height:40, background:C.goldP, borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", color:C.gold }}><AWD_SVG /></div>
@@ -660,8 +674,8 @@ function AppContent({
               <div className="about-badge-source" style={{ position:"absolute", bottom:32, right:10, background:`linear-gradient(135deg,${C.green},${C.greenL})`, borderRadius:10, padding:"10px 18px", display:"flex", alignItems:"center", gap:8, color:"#fff", boxShadow:"0 8px 28px rgba(27,74,24,0.38)" }}>
                 <LF_SVG /><span className="dm" style={{ fontSize:11.5, fontWeight:700, letterSpacing:"0.06em" }}>Sourced from Mwea</span>
               </div>
-              <a href={IG_URL} target="_blank" rel="noreferrer" className="about-badge-fb" style={{ position:"absolute", top:24, right:20, background:"linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)", borderRadius:10, padding:"9px 16px", display:"flex", alignItems:"center", gap:8, textDecoration:"none", boxShadow:"0 6px 20px rgba(225,48,108,0.38)" }}>
-                <IG_SVG style={{ stroke:"#fff" }} /><span className="dm" style={{ fontSize:11.5, color:"#fff", fontWeight:700 }}>Follow Us</span>
+              <a href={FB_URL} target="_blank" rel="noreferrer" className="about-badge-fb" style={{ position:"absolute", top:24, right:20, background:"#1877f2", borderRadius:10, padding:"9px 16px", display:"flex", alignItems:"center", gap:8, textDecoration:"none", boxShadow:"0 6px 20px rgba(24,119,242,0.38)" }}>
+                <FB_SVG /><span className="dm" style={{ fontSize:11.5, color:"#fff", fontWeight:700 }}>Follow Us</span>
               </a>
             </div>
           </Reveal>
@@ -674,7 +688,7 @@ function AppContent({
             </Reveal>
             <Reveal delay={0.12}>
               <p className="dm" style={{ fontSize:15.5, lineHeight:1.95, color:C.mut, marginBottom:18 }}>
-                We are <strong style={{ color:C.txt }}>Mwea Rice Hub</strong>. Born among the paddies of Mwea — Kenya's heartland of pishori — we've spent over 15 years perfecting the art of sourcing and supplying the finest rice in the country.
+                We are <strong style={{ color:C.txt }}>Lizz wa Pishori</strong>. Born among the paddies of Mwea — Kenya's heartland of pishori — we've spent over 15 years perfecting the art of sourcing and supplying the finest rice in the country.
               </p>
               <p className="dm" style={{ fontSize:15.5, lineHeight:1.95, color:C.mut, marginBottom:36 }}>
                 Every sack is hand-sorted, stone-free, and packaged to preserve the natural aroma that makes pishori so special. We serve homes, restaurants, hotels, and distributors across all 47 counties.
@@ -682,7 +696,7 @@ function AppContent({
             </Reveal>
             <Reveal delay={0.18}>
               <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:11, marginBottom:36 }} className="g42">
-                {["Hand-sorted & stone-free","Direct from Mwea paddies","Consistent 2kg–50kg quality","15+ years nationwide supply"].map(pt => (
+                {["Hand-sorted & stone-free","Direct from Mwea paddies","Consistent quality all sizes","15+ years nationwide supply"].map(pt => (
                   <div key={pt} style={{ display:"flex", alignItems:"flex-start", gap:10, padding:"10px 12px", background:C.crm, borderRadius:10, border:`1px solid ${C.bdr}` }}>
                     <div style={{ width:22, height:22, background:C.goldP, borderRadius:6, display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0, marginTop:1, color:C.gold }}><CHK_SVG /></div>
                     <span className="dm" style={{ fontSize:13, color:C.mut, lineHeight:1.65 }}>{pt}</span>
@@ -693,6 +707,9 @@ function AppContent({
                 <button onClick={() => openWA(null)} className="bwa"><WA_SVG /> Chat with Us</button>
                 <a href={FB_URL} target="_blank" rel="noreferrer" style={{ background:"#1877f2", color:"#fff", textDecoration:"none", padding:"12px 22px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:600, fontSize:13, display:"inline-flex", alignItems:"center", gap:8, boxShadow:"0 4px 16px rgba(24,119,242,0.3)" }}>
                   <FB_SVG /> Our Facebook
+                </a>
+                <a href={IG_URL} target="_blank" rel="noreferrer" style={{ background:"linear-gradient(135deg,#E1306C,#833AB4)", color:"#fff", textDecoration:"none", padding:"12px 22px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:600, fontSize:13, display:"inline-flex", alignItems:"center", gap:8, boxShadow:"0 4px 16px rgba(225,48,108,0.3)" }}>
+                  <IG_SVG /> Instagram
                 </a>
               </div>
             </Reveal>
@@ -715,7 +732,7 @@ function AppContent({
               [<SHD_SVG />,"Stone-Free Guaranteed","Every batch is hand-sorted and cleaned. Pure grain, nothing else, every single time."],
               [<TRK_SVG />,"Countrywide Delivery","We deliver to all 47 counties. Same-day within Nairobi, 2–3 days upcountry."],
               [<LF_SVG />,"Naturally Fragrant","No additives. The aroma you smell is pure pishori, exactly as nature intended."],
-              [<PKG_SVG />,"All Pack Sizes","From 2kg home packs to 50kg wholesale sacks — the right size for every need."],
+              [<PKG_SVG />,"All Pack Sizes","From 1kg home packs to 50kg wholesale sacks — the right size for every need."],
               [<SPK_SVG />,"Premium Quality","Long grain, low starch, perfectly fluffy every time. Restaurant and home-grade."],
             ].map(([Ic,title,desc], i) => (
               <Reveal key={title} delay={i * 0.08}>
@@ -740,7 +757,7 @@ function AppContent({
               <p className="dm" style={{ fontSize:15.5, color:C.mut, marginTop:14, maxWidth:480, margin:"14px auto 0" }}>From household packs to wholesale sacks — every size, every need.</p>
             </div>
           </Reveal>
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(4,1fr)", gap:22 }} className="g42">
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(3,1fr)", gap:22 }} className="g42">
             {PRODUCTS.map((p, i) => (
               <Reveal key={p.name} delay={i * 0.09}>
                 <div className="card" style={{ overflow:"hidden", display:"flex", flexDirection:"column", height:"100%" }}>
@@ -777,7 +794,7 @@ function AppContent({
                 <p className="dm" style={{ fontSize:14, color:"rgba(255,255,255,0.58)", marginTop:8 }}>Special pricing for hotels, restaurants, distributors & institutions.</p>
               </div>
               <div style={{ display:"flex", gap:10, flexWrap:"wrap", position:"relative" }}>
-                <button onClick={() => openWA(PRODUCTS[3])} className="bwa"><WA_SVG /> WhatsApp Us</button>
+                <button onClick={() => openWA(null)} className="bwa"><WA_SVG /> WhatsApp Us</button>
                 <a href={`tel:+${WA_NUM}`} className="bgold" style={{ textDecoration:"none" }}><PHN_SVG /> Call Now</a>
               </div>
             </div>
@@ -813,9 +830,12 @@ function AppContent({
             ))}
           </div>
           <Reveal delay={0.2}>
-            <div style={{ textAlign:"center", marginTop:38 }}>
-              <a href={IG_URL} target="_blank" rel="noreferrer" style={{ display:"inline-flex", alignItems:"center", gap:9, background:"linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)", color:"#fff", textDecoration:"none", padding:"14px 28px", borderRadius:10, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13 }}>
-                <IG_SVG /> Follow us on Instagram <EXT_SVG />
+            <div style={{ textAlign:"center", marginTop:38, display:"flex", gap:12, justifyContent:"center", flexWrap:"wrap" }}>
+              <a href={IG_URL} target="_blank" rel="noreferrer" style={{ display:"inline-flex", alignItems:"center", gap:9, background:"linear-gradient(135deg,#E1306C,#833AB4)", color:"#fff", textDecoration:"none", padding:"14px 28px", borderRadius:10, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13 }}>
+                <IG_SVG /> Follow on Instagram <EXT_SVG />
+              </a>
+              <a href={TT_URL} target="_blank" rel="noreferrer" style={{ display:"inline-flex", alignItems:"center", gap:9, background:C.txt, color:"#fff", textDecoration:"none", padding:"14px 28px", borderRadius:10, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13 }}>
+                <TT_SVG /> Watch Our TikTok <EXT_SVG />
               </a>
             </div>
           </Reveal>
@@ -945,7 +965,7 @@ function AppContent({
               Ready to Experience<br /><em style={{ color:C.goldL }}>Real Pishori?</em>
             </h2>
             <p className="dm" style={{ fontSize:16.5, color:"rgba(255,255,255,0.58)", maxWidth:440, margin:"0 auto 48px" }}>
-              Order today and taste why thousands of Kenyan families and restaurants choose Mwea Rice Hub every month.
+              Order today and taste why thousands of Kenyan families and restaurants choose Lizz wa Pishori every month.
             </p>
             <div className="hrow" style={{ display:"flex", gap:12, justifyContent:"center", flexWrap:"wrap" }}>
               <button onClick={() => openWA(null)} className="bwa" style={{ padding:"16px 36px", fontSize:14 }}><WA_SVG /> Order on WhatsApp</button>
@@ -961,7 +981,7 @@ function AppContent({
           <Reveal>
             <div style={{ textAlign:"center", marginBottom:66 }}>
               <div className="lbl" style={{ justifyContent:"center", marginBottom:18 }}>Get in Touch</div>
-              <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:"clamp(2rem,3.5vw,3.4rem)", fontWeight:800, color:C.txt, letterSpacing:"-0.02em" }}>Contact <em style={{ color:C.gold }}>Mwea Rice Hub</em></h2>
+              <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:"clamp(2rem,3.5vw,3.4rem)", fontWeight:800, color:C.txt, letterSpacing:"-0.02em" }}>Contact <em style={{ color:C.gold }}>Lizz wa Pishori</em></h2>
               <p className="dm" style={{ fontSize:15.5, color:C.mut, marginTop:12 }}>Fastest response via WhatsApp — or fill in the form below.</p>
             </div>
           </Reveal>
@@ -970,8 +990,10 @@ function AppContent({
               <div>
                 {[
                   [<WA_SVG />,"WhatsApp / Calls",PHONE],
-                  [<FB_SVG />,"Facebook","Mwea Rice Hub"],
+                  [<FB_SVG />,"Facebook","Lizz wa Pishori"],
                   [<IG_SVG />,"Instagram","@mwearicehub"],
+                  [<TT_SVG />,"TikTok","@MweaRiceHub"],
+                  [<ML_SVG />,"Email",EMAIL],
                   [<PIN_SVG />,"Location","Mwea, Kirinyaga County"],
                   [<CLK_SVG />,"Business Hours","Mon–Sat: 7AM – 8PM"],
                 ].map(([Ic,label,val]) => (
@@ -986,7 +1008,9 @@ function AppContent({
                 <div style={{ display:"flex", flexDirection:"column", gap:9, marginTop:16 }}>
                   <button onClick={() => openWA(null)} className="bwa" style={{ justifyContent:"center" }}><WA_SVG /> Chat on WhatsApp — {PHONE}</button>
                   <a href={FB_URL} target="_blank" rel="noreferrer" style={{ background:"#1877f2", color:"#fff", textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9 }}><FB_SVG /> Follow on Facebook</a>
-                  <a href={IG_URL} target="_blank" rel="noreferrer" style={{ background:"linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)", color:"#fff", textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9 }}><IG_SVG /> Follow on Instagram</a>
+                  <a href={IG_URL} target="_blank" rel="noreferrer" style={{ background:"linear-gradient(135deg,#E1306C,#833AB4)", color:"#fff", textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9 }}><IG_SVG /> Follow on Instagram</a>
+                  <a href={TT_URL} target="_blank" rel="noreferrer" style={{ background:C.txt, color:"#fff", textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9 }}><TT_SVG /> Watch on TikTok</a>
+                  <a href={`mailto:${EMAIL}`} style={{ background:C.crm, color:C.gold, textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9, border:`1.5px solid ${C.bdr}` }}><ML_SVG /> {EMAIL}</a>
                 </div>
               </div>
             </Reveal>
@@ -1022,7 +1046,7 @@ function AppContent({
               <div style={{ display:"flex", alignItems:"center", gap:11, marginBottom:16 }}>
                 <div style={{ width:38, height:38, background:`linear-gradient(135deg,${C.gold},${C.goldL})`, borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", color:"#fff" }}><WHT_SVG /></div>
                 <div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:17, color:"#fff" }}>Mwea Rice Hub</div>
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:17, color:"#fff" }}>Lizz wa Pishori</div>
                   <div className="dm" style={{ fontSize:7.5, color:C.gold, letterSpacing:"0.25em", textTransform:"uppercase" }}>Premium Rice · Kenya</div>
                 </div>
               </div>
@@ -1031,7 +1055,8 @@ function AppContent({
               </p>
               <div style={{ display:"flex", gap:9 }}>
                 {[[FB_URL,"rgba(24,119,242,0.14)","rgba(24,119,242,0.3)",<FB_SVG />,"Facebook"],
-                  [IG_URL,"rgba(225,48,108,0.1)","rgba(225,48,108,0.3)",<IG_SVG />,"Instagram"],
+                  [IG_URL,"rgba(225,48,108,0.12)","rgba(225,48,108,0.3)",<IG_SVG />,"Instagram"],
+                  [TT_URL,"rgba(255,255,255,0.06)","rgba(255,255,255,0.14)",<TT_SVG />,"TikTok"],
                   [`https://wa.me/${WA_NUM}`,"rgba(37,211,102,0.1)","rgba(37,211,102,0.28)",<WA_SVG />,"WhatsApp"]
                 ].map(([href,bg,border,Ic,label]) => (
                   <a key={label} href={href} target="_blank" rel="noreferrer" aria-label={label}
@@ -1051,7 +1076,7 @@ function AppContent({
             </div>
             <div>
               <div className="dm" style={{ fontSize:9, letterSpacing:"0.25em", textTransform:"uppercase", color:C.gold, fontWeight:700, marginBottom:20 }}>Contact</div>
-              {[[<WA_SVG />,PHONE],[<FB_SVG />,"Mwea Rice Hub"],[<IG_SVG />,"@mwearicehub"],[<PIN_SVG />,"Mwea, Kirinyaga County"],[<CLK_SVG />,"Mon–Sat: 7AM – 8PM"]].map(([Ic,val]) => (
+              {[[<WA_SVG />,PHONE],[<FB_SVG />,"Lizz wa Pishori"],[<IG_SVG />,"@mwearicehub"],[<ML_SVG />,EMAIL],[<PIN_SVG />,"Mwea, Kirinyaga County"],[<CLK_SVG />,"Mon–Sat: 7AM – 8PM"]].map(([Ic,val]) => (
                 <div key={val} style={{ display:"flex", gap:9, marginBottom:13, alignItems:"flex-start" }}>
                   <span style={{ color:C.gold, flexShrink:0, marginTop:1 }}>{Ic}</span>
                   <span className="dm" style={{ fontSize:13, color:"rgba(255,255,255,0.28)", lineHeight:1.6 }}>{val}</span>
@@ -1061,7 +1086,7 @@ function AppContent({
             </div>
           </div>
           <div style={{ display:"flex", justifyContent:"space-between", flexWrap:"wrap", gap:8 }}>
-            <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>© {new Date().getFullYear()} Mwea Rice Hub. All rights reserved.</span>
+            <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>© {new Date().getFullYear()} Lizz wa Pishori. All rights reserved.</span>
             <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>Kenya's Finest Pishori · Countrywide Delivery</span>
           </div>
         </div>
