@@ -105,7 +105,7 @@ function Loader({ onDone }) {
         </div>
         <div style={{ textAlign:"center", lineHeight:1 }}>
           <div style={{ fontFamily:"'Playfair Display',serif", fontSize:28, fontWeight:800,
-            color:"#fff", letterSpacing:"-0.02em", marginBottom:8 }}>Esther Pishori Rice</div>
+            color:"#fff", letterSpacing:"-0.02em", marginBottom:8 }}>Dama's Pishori Rice</div>
           <div style={{ fontFamily:"'DM Sans',sans-serif", fontSize:9, letterSpacing:"0.38em",
             color:GOLD, textTransform:"uppercase", fontWeight:700 }}>Premium Rice · Kenya · Est. 2009</div>
         </div>
@@ -159,7 +159,6 @@ const LF_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
 const GLB_SVG = () => <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>;
 const AWD_SVG = () => <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>;
 const PHN_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.46 13a19.79 19.79 0 01-3.07-8.67A2 2 0 012.38 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>;
-const FB_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>;
 const TT_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.77 1.52V6.74a4.85 4.85 0 01-1-.05z"/></svg>;
 const ML_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>;
 const CLK_SVG = () => <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>;
@@ -174,12 +173,11 @@ const NXT_SVG = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none
 const QT_SVG = () => <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" opacity="0.12"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1zm12 0c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>;
 
 // ── Constants ─────────────────────────────────────────────────────────────
-const WA_NUM = "254703412758";
-const PHONE = "+254 703 412 758";
-const FB_URL = "https://www.facebook.com/nyambura.maina.5686";
-const IG_URL = "https://www.instagram.com/mwearicehub?igsh=bjlxOG5uZWg5OHho";
+const WA_NUM = "254720955390";
+const PHONE = "+254 720 955 390";
+const IG_URL = "https://www.instagram.com/damas_pishori_rice?igsh=Y3I0MGFndzkxM2h6";
 const TT_URL = "https://vm.tiktok.com/ZS9Lkc9NR9XdF-B8lym/";
-const EMAIL = "Imogenlizah1@gmail.com";
+const EMAIL = "damaspishoririce@gmail.com";
 const NAV_ITEMS = ["Home", "About", "Products", "Gallery", "Delivery", "Contact"];
 const NAV_MAP = { Home:"home", About:"about", Products:"products", Gallery:"gallery", Delivery:"delivery", Contact:"contact" };
 
@@ -207,7 +205,7 @@ const TESTIMONIALS = [
   { name:"Wanjiku Muthoni", loc:"Nairobi", text:"The fragrance when cooking fills the entire house. My family now refuses any other brand!", init:"W", role:"Home Cook" },
   { name:"Chef Otieno", loc:"Mombasa", text:"We use it for pilau and biryani. Guests always compliment the rice. Deliveries always prompt.", init:"O", role:"Head Chef" },
   { name:"Grace Njeri", loc:"Kisumu", text:"Zero stones, perfectly sorted every time. The best pishori in Kenya — without question.", init:"G", role:"Restaurant Owner" },
-  { name:"James Kamau", loc:"Nakuru", text:"As a distributor, Esther Pishori Rice's supply chain is reliable and consistent. Great pricing, nationwide.", init:"J", role:"Distributor" },
+  { name:"James Kamau", loc:"Nakuru", text:"As a distributor, Dama's Pishori Rice's supply chain is reliable and consistent. Great pricing, nationwide.", init:"J", role:"Distributor" },
 ];
 
 const COUNTIES = ["Nairobi","Mombasa","Kisumu","Nakuru","Eldoret","Thika","Machakos","Nyeri","Meru","Garissa","Kisii","Kakamega","Embu","Kitui","Lamu","Malindi","Nanyuki","Naivasha","All 47 Counties ✦"];
@@ -480,8 +478,8 @@ function AppContent({
 
   const openWA = useCallback((product) => {
     const msg = product
-      ? `Hello Esther Pishori Rice! I'd like to order *${product.name}* (${product.price}). Please confirm availability.`
-      : `Hello Esther Pishori Rice! I'm interested in your pishori rice. Please share more details.`;
+      ? `Hello Dama's Pishori Rice! I'd like to order *${product.name}* (${product.price}). Please confirm availability.`
+      : `Hello Dama's Pishori Rice! I'm interested in your pishori rice. Please share more details.`;
     window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, "_blank");
   }, []);
 
@@ -495,7 +493,7 @@ function AppContent({
 
   const submitContact = (e) => {
     e.preventDefault();
-    const msg = `Hello Esther Pishori Rice! I'm *${cform.name}* (${cform.phone}). ${cform.msg}`;
+    const msg = `Hello Dama's Pishori Rice! I'm *${cform.name}* (${cform.phone}). ${cform.msg}`;
     window.open(`https://wa.me/${WA_NUM}?text=${encodeURIComponent(msg)}`, "_blank");
     setCsent(true);
     setTimeout(() => { setCsent(false); setCform({ name:"", phone:"", msg:"" }); }, 3000);
@@ -604,7 +602,7 @@ function AppContent({
         <button onClick={() => scrollTo("Home")} style={{ background:"none", border:"none", cursor:"pointer", display:"flex", alignItems:"center", gap:11 }}>
           <div style={{ width:37, height:37, background:`linear-gradient(135deg,${C.gold},${C.goldL})`, borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", boxShadow:`0 4px 14px rgba(184,115,10,0.38)`, color:"#fff" }}><WHT_SVG /></div>
           <div>
-            <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:16, color:C.txt, lineHeight:1.1 }}>Esther Pishori Rice</div>
+            <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:16, color:C.txt, lineHeight:1.1 }}>Dama's Pishori Rice</div>
             <div className="dm" style={{ fontSize:7.5, color:C.gold, letterSpacing:"0.28em", textTransform:"uppercase", fontWeight:700 }}>Premium Rice · Kenya</div>
           </div>
         </button>
@@ -631,7 +629,6 @@ function AppContent({
             <button onClick={() => { setOrderModal(PRODUCTS[0]); setMenuOpen(false); }} className="bgold"><CART_SVG /> Order Now</button>
           </div>
           <div style={{ display:"flex", gap:14, marginTop:6 }}>
-            <a href={FB_URL} target="_blank" rel="noreferrer" style={{ color:"#1877f2", width:40, height:40, background:"rgba(24,119,242,0.1)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="Facebook"><FB_SVG /></a>
             <a href={IG_URL} target="_blank" rel="noreferrer" style={{ color:"#E1306C", width:40, height:40, background:"rgba(225,48,108,0.1)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="Instagram"><IG_SVG /></a>
             <a href={TT_URL} target="_blank" rel="noreferrer" style={{ color:C.txt, width:40, height:40, background:"rgba(0,0,0,0.05)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="TikTok"><TT_SVG /></a>
             <a href={`tel:+${WA_NUM}`} style={{ color:C.green, width:40, height:40, background:"rgba(27,74,24,0.08)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center" }} aria-label="Call us"><PHN_SVG /></a>
@@ -674,8 +671,8 @@ function AppContent({
               <div className="about-badge-source" style={{ position:"absolute", bottom:32, right:10, background:`linear-gradient(135deg,${C.green},${C.greenL})`, borderRadius:10, padding:"10px 18px", display:"flex", alignItems:"center", gap:8, color:"#fff", boxShadow:"0 8px 28px rgba(27,74,24,0.38)" }}>
                 <LF_SVG /><span className="dm" style={{ fontSize:11.5, fontWeight:700, letterSpacing:"0.06em" }}>Sourced from Mwea</span>
               </div>
-              <a href={FB_URL} target="_blank" rel="noreferrer" className="about-badge-fb" style={{ position:"absolute", top:24, right:20, background:"#1877f2", borderRadius:10, padding:"9px 16px", display:"flex", alignItems:"center", gap:8, textDecoration:"none", boxShadow:"0 6px 20px rgba(24,119,242,0.38)" }}>
-                <FB_SVG /><span className="dm" style={{ fontSize:11.5, color:"#fff", fontWeight:700 }}>Follow Us</span>
+              <a href={IG_URL} target="_blank" rel="noreferrer" className="about-badge-fb" style={{ position:"absolute", top:24, right:20, background:"linear-gradient(135deg,#E1306C,#833AB4)", borderRadius:10, padding:"9px 16px", display:"flex", alignItems:"center", gap:8, textDecoration:"none", boxShadow:"0 6px 20px rgba(225,48,108,0.38)" }}>
+                <IG_SVG /><span className="dm" style={{ fontSize:11.5, color:"#fff", fontWeight:700 }}>Follow Us</span>
               </a>
             </div>
           </Reveal>
@@ -688,7 +685,7 @@ function AppContent({
             </Reveal>
             <Reveal delay={0.12}>
               <p className="dm" style={{ fontSize:15.5, lineHeight:1.95, color:C.mut, marginBottom:18 }}>
-                We are <strong style={{ color:C.txt }}>Esther Pishori Rice</strong>. Born among the paddies of Mwea — Kenya's heartland of pishori — we've spent over 15 years perfecting the art of sourcing and supplying the finest rice in the country.
+                We are <strong style={{ color:C.txt }}>Dama's Pishori Rice</strong>. Born among the paddies of Mwea — Kenya's heartland of pishori — we've spent over 15 years perfecting the art of sourcing and supplying the finest rice in the country.
               </p>
               <p className="dm" style={{ fontSize:15.5, lineHeight:1.95, color:C.mut, marginBottom:36 }}>
                 Every sack is hand-sorted, stone-free, and packaged to preserve the natural aroma that makes pishori so special. We serve homes, restaurants, hotels, and distributors across all 47 counties.
@@ -705,9 +702,6 @@ function AppContent({
               </div>
               <div style={{ display:"flex", gap:10, flexWrap:"wrap" }}>
                 <button onClick={() => openWA(null)} className="bwa"><WA_SVG /> Chat with Us</button>
-                <a href={FB_URL} target="_blank" rel="noreferrer" style={{ background:"#1877f2", color:"#fff", textDecoration:"none", padding:"12px 22px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:600, fontSize:13, display:"inline-flex", alignItems:"center", gap:8, boxShadow:"0 4px 16px rgba(24,119,242,0.3)" }}>
-                  <FB_SVG /> Our Facebook
-                </a>
                 <a href={IG_URL} target="_blank" rel="noreferrer" style={{ background:"linear-gradient(135deg,#E1306C,#833AB4)", color:"#fff", textDecoration:"none", padding:"12px 22px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:600, fontSize:13, display:"inline-flex", alignItems:"center", gap:8, boxShadow:"0 4px 16px rgba(225,48,108,0.3)" }}>
                   <IG_SVG /> Instagram
                 </a>
@@ -965,7 +959,7 @@ function AppContent({
               Ready to Experience<br /><em style={{ color:C.goldL }}>Real Pishori?</em>
             </h2>
             <p className="dm" style={{ fontSize:16.5, color:"rgba(255,255,255,0.58)", maxWidth:440, margin:"0 auto 48px" }}>
-              Order today and taste why thousands of Kenyan families and restaurants choose Esther Pishori Rice every month.
+              Order today and taste why thousands of Kenyan families and restaurants choose Dama's Pishori Rice every month.
             </p>
             <div className="hrow" style={{ display:"flex", gap:12, justifyContent:"center", flexWrap:"wrap" }}>
               <button onClick={() => openWA(null)} className="bwa" style={{ padding:"16px 36px", fontSize:14 }}><WA_SVG /> Order on WhatsApp</button>
@@ -981,7 +975,7 @@ function AppContent({
           <Reveal>
             <div style={{ textAlign:"center", marginBottom:66 }}>
               <div className="lbl" style={{ justifyContent:"center", marginBottom:18 }}>Get in Touch</div>
-              <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:"clamp(2rem,3.5vw,3.4rem)", fontWeight:800, color:C.txt, letterSpacing:"-0.02em" }}>Contact <em style={{ color:C.gold }}>Esther Pishori Rice</em></h2>
+              <h2 style={{ fontFamily:"'Playfair Display',serif", fontSize:"clamp(2rem,3.5vw,3.4rem)", fontWeight:800, color:C.txt, letterSpacing:"-0.02em" }}>Contact <em style={{ color:C.gold }}>Dama's Pishori Rice</em></h2>
               <p className="dm" style={{ fontSize:15.5, color:C.mut, marginTop:12 }}>Fastest response via WhatsApp — or fill in the form below.</p>
             </div>
           </Reveal>
@@ -990,9 +984,8 @@ function AppContent({
               <div>
                 {[
                   [<WA_SVG />,"WhatsApp / Calls",PHONE],
-                  [<FB_SVG />,"Facebook","Esther Pishori Rice"],
-                  [<IG_SVG />,"Instagram","@mwearicehub"],
-                  [<TT_SVG />,"TikTok","@EstherPishoriRice"],
+                  [<IG_SVG />,"Instagram","@damas_pishori_rice"],
+                  [<TT_SVG />,"TikTok","@damaspishoricerice"],
                   [<ML_SVG />,"Email",EMAIL],
                   [<PIN_SVG />,"Location","Mwea, Kirinyaga County"],
                   [<CLK_SVG />,"Business Hours","Mon–Sat: 7AM – 8PM"],
@@ -1007,7 +1000,6 @@ function AppContent({
                 ))}
                 <div style={{ display:"flex", flexDirection:"column", gap:9, marginTop:16 }}>
                   <button onClick={() => openWA(null)} className="bwa" style={{ justifyContent:"center" }}><WA_SVG /> Chat on WhatsApp — {PHONE}</button>
-                  <a href={FB_URL} target="_blank" rel="noreferrer" style={{ background:"#1877f2", color:"#fff", textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9 }}><FB_SVG /> Follow on Facebook</a>
                   <a href={IG_URL} target="_blank" rel="noreferrer" style={{ background:"linear-gradient(135deg,#E1306C,#833AB4)", color:"#fff", textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9 }}><IG_SVG /> Follow on Instagram</a>
                   <a href={TT_URL} target="_blank" rel="noreferrer" style={{ background:C.txt, color:"#fff", textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9 }}><TT_SVG /> Watch on TikTok</a>
                   <a href={`mailto:${EMAIL}`} style={{ background:C.crm, color:C.gold, textDecoration:"none", padding:"13px", borderRadius:8, fontFamily:"'DM Sans',sans-serif", fontWeight:700, fontSize:13, display:"flex", alignItems:"center", justifyContent:"center", gap:9, border:`1.5px solid ${C.bdr}` }}><ML_SVG /> {EMAIL}</a>
@@ -1046,7 +1038,7 @@ function AppContent({
               <div style={{ display:"flex", alignItems:"center", gap:11, marginBottom:16 }}>
                 <div style={{ width:38, height:38, background:`linear-gradient(135deg,${C.gold},${C.goldL})`, borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", color:"#fff" }}><WHT_SVG /></div>
                 <div>
-                  <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:17, color:"#fff" }}>Esther Pishori Rice</div>
+                  <div style={{ fontFamily:"'Playfair Display',serif", fontWeight:700, fontSize:17, color:"#fff" }}>Dama's Pishori Rice</div>
                   <div className="dm" style={{ fontSize:7.5, color:C.gold, letterSpacing:"0.25em", textTransform:"uppercase" }}>Premium Rice · Kenya</div>
                 </div>
               </div>
@@ -1054,8 +1046,7 @@ function AppContent({
                 Kenya's most trusted pishori supplier. Hand-sorted, stone-free, fragrant — delivered countrywide since 2009.
               </p>
               <div style={{ display:"flex", gap:9 }}>
-                {[[FB_URL,"rgba(24,119,242,0.14)","rgba(24,119,242,0.3)",<FB_SVG />,"Facebook"],
-                  [IG_URL,"rgba(225,48,108,0.12)","rgba(225,48,108,0.3)",<IG_SVG />,"Instagram"],
+                {[[IG_URL,"rgba(225,48,108,0.12)","rgba(225,48,108,0.3)",<IG_SVG />,"Instagram"],
                   [TT_URL,"rgba(255,255,255,0.06)","rgba(255,255,255,0.14)",<TT_SVG />,"TikTok"],
                   [`https://wa.me/${WA_NUM}`,"rgba(37,211,102,0.1)","rgba(37,211,102,0.28)",<WA_SVG />,"WhatsApp"]
                 ].map(([href,bg,border,Ic,label]) => (
@@ -1076,7 +1067,7 @@ function AppContent({
             </div>
             <div>
               <div className="dm" style={{ fontSize:9, letterSpacing:"0.25em", textTransform:"uppercase", color:C.gold, fontWeight:700, marginBottom:20 }}>Contact</div>
-              {[[<WA_SVG />,PHONE],[<FB_SVG />,"Esther Pishori Rice"],[<IG_SVG />,"@mwearicehub"],[<ML_SVG />,EMAIL],[<PIN_SVG />,"Mwea, Kirinyaga County"],[<CLK_SVG />,"Mon–Sat: 7AM – 8PM"]].map(([Ic,val]) => (
+              {[[<WA_SVG />,PHONE],[<IG_SVG />,"@damas_pishori_rice"],[<TT_SVG />,"@damaspishoricerice"],[<ML_SVG />,EMAIL],[<PIN_SVG />,"Mwea, Kirinyaga County"],[<CLK_SVG />,"Mon–Sat: 7AM – 8PM"]].map(([Ic,val]) => (
                 <div key={val} style={{ display:"flex", gap:9, marginBottom:13, alignItems:"flex-start" }}>
                   <span style={{ color:C.gold, flexShrink:0, marginTop:1 }}>{Ic}</span>
                   <span className="dm" style={{ fontSize:13, color:"rgba(255,255,255,0.28)", lineHeight:1.6 }}>{val}</span>
@@ -1086,7 +1077,7 @@ function AppContent({
             </div>
           </div>
           <div style={{ display:"flex", justifyContent:"space-between", flexWrap:"wrap", gap:8 }}>
-            <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>© {new Date().getFullYear()} Esther Pishori Rice. All rights reserved.</span>
+            <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>© {new Date().getFullYear()} Dama's Pishori Rice. All rights reserved.</span>
             <span className="dm" style={{ fontSize:11.5, color:"rgba(255,255,255,0.15)" }}>Kenya's Finest Pishori · Countrywide Delivery</span>
           </div>
         </div>
